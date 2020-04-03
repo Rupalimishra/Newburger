@@ -1,0 +1,321 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for src/store/actions/auth.js</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="../../../prettify.css" />
+    <link rel="stylesheet" href="../../../base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(../../../sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="../../../index.html">All files</a> / <a href="index.html">src/store/actions</a> auth.js
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import axios <span class="cstat-no" title="statement not covered" >from 'axios';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+&nbsp;
+import * as actionT<span class="cstat-no" title="statement not covered" >ypes from './actionTypes'</span>;<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></span></span></span>
+&nbsp;
+export const authS<span class="cstat-no" title="statement not covered" >tart = () =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        type: actionTypes.AUTH_START
+    };
+};
+&nbsp;
+export const authSuc<span class="cstat-no" title="statement not covered" >cess = (token, userId)<span class="fstat-no" title="function not covered" > =</span>&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        type: actionTypes.AUTH_SUCCESS,
+        idToken: token,
+        userId: userId
+    };
+};
+&nbsp;
+export const auth<span class="cstat-no" title="statement not covered" >Fail = (error) =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        type: actionTypes.AUTH_FAIL,
+        error: error
+    };
+};
+&nbsp;
+export const lo<span class="cstat-no" title="statement not covered" >gout = () =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >    localStorage.removeItem('token');</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.removeItem('expirationDate');</span>
+<span class="cstat-no" title="statement not covered" >    localStorage.removeItem('userId');</span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        type: actionTypes.AUTH_LOGOUT
+    };
+};
+&nbsp;
+export const checkAuthTim<span class="cstat-no" title="statement not covered" >eout = (expirationTime) =&gt; <span class="fstat-no" title="function not covered" >{</span></span>
+<span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        setTimeout(<span class="fstat-no" title="function not covered" >()</span> =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >            dispatch(logout());</span>
+        }, expirationTime * 1000);
+    };
+};
+&nbsp;
+export const <span class="cstat-no" title="statement not covered" >auth = (email, <span class="fstat-no" title="function not covered" >pa</span>ssword, isSignup) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >        dispatch(authStart());</span>
+        const authData = <span class="cstat-no" title="statement not covered" >{</span>
+            email: email,
+            password: password,
+            returnSecureToken: true
+        };
+        let url = <span class="cstat-no" title="statement not covered" >'https://www.googleapis.com/identitytoolkit/v3/relyingparty/signupNewUser?key=AIzaSyB5cHT6x62tTe-g27vBDIqWcwQWBSj3uiY';</span>
+<span class="cstat-no" title="statement not covered" >        if (!isSignup) {</span>
+<span class="cstat-no" title="statement not covered" >            url = 'https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyB5cHT6x62tTe-g27vBDIqWcwQWBSj3uiY';</span>
+        }
+<span class="cstat-no" title="statement not covered" >        axios.post(url, authData)</span>
+            .<span class="fstat-no" title="function not covered" >th</span>en(response =&gt; {
+                const expirationDat<span class="cstat-no" title="statement not covered" >e = new Date(new Date().getTime() + response.data.expiresIn * 10</span>00);
+<span class="cstat-no" title="statement not covered" >                localStorage.setItem('token', response.data.idToke</span>n);
+<span class="cstat-no" title="statement not covered" >                localStorage.setItem('expirationDate', expirationDat</span>e);
+<span class="cstat-no" title="statement not covered" >                localStorage.setItem('userId', response.data.localI</span>d);
+<span class="cstat-no" title="statement not covered" >                dispatch(authSuccess(response.data.idToken, response.data.localId</span>));
+<span class="cstat-no" title="statement not covered" >                dispatch(checkAuthTimeout(response.data.expiresIn</span>));
+            })
+            .c<span class="fstat-no" title="function not covered" >at</span>ch(err =&gt; {
+<span class="cstat-no" title="statement not covered" >                dispatch(authFail(err.response.data.error</span>));
+            });
+    };
+};
+&nbsp;
+export const setAuthRedirect<span class="cstat-no" title="statement not covered" >Path = (path) =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >    return {</span>
+        type: actionTypes.SET_AUTH_REDIRECT_PATH,
+        path: path
+    };
+};
+&nbsp;
+export const authCheckS<span class="cstat-no" title="statement not covered" >tate = () =&gt; {<span class="fstat-no" title="function not covered" ></span></span>
+<span class="cstat-no" title="statement not covered" >    return <span class="fstat-no" title="function not covered" >di</span>spatch =&gt; {</span>
+        const token = <span class="cstat-no" title="statement not covered" >localStorage.getItem('token');</span>
+<span class="cstat-no" title="statement not covered" >        if (!token) {</span>
+<span class="cstat-no" title="statement not covered" >            dispatch(logout());</span>
+        } else {
+            const expirationDate = <span class="cstat-no" title="statement not covered" >new Date(localStorage.getItem('expirationDate'));</span>
+<span class="cstat-no" title="statement not covered" >            if (expirationDate &lt;= new Date()) {</span>
+<span class="cstat-no" title="statement not covered" >                dispatch(logout());</span>
+            } else {
+                const userId = <span class="cstat-no" title="statement not covered" >localStorage.getItem('userId');</span>
+<span class="cstat-no" title="statement not covered" >                dispatch(authSuccess(token, userId));</span>
+<span class="cstat-no" title="statement not covered" >                dispatch(checkAuthTimeout((expirationDate.getTime() - new Date().getTime()) / 1000 ));</span>
+            }   
+        }
+    };
+};</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 03 2020 21:42:14 GMT+0530 (IST)
+</div>
+</div>
+<script src="../../../prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="../../../sorter.js"></script>
+</body>
+</html>

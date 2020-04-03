@@ -6,7 +6,7 @@ import BurgerBuilder from './containers/BurgerBuilder/BurgerBuilder';
 class App extends Component {
   render () {
     return (
-      <div>
+      <div data-test="component-app">
         <Layout>
           <BurgerBuilder />
         </Layout>

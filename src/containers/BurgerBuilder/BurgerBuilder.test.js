@@ -2,6 +2,7 @@ import React from 'react';
 
 import { configure, shallow } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
+
 import { BurgerBuilder } from './BurgerBuilder';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
 
@@ -18,5 +19,9 @@ describe('<BurgerBuilder />', () => {
         wrapper.setProps({ings: {salad: 0}});
         expect(wrapper.find(BuildControls)).toHaveLength(1);
     });
-    it('should render <BuildControls />')
+    it('should render three <BuildControls /> when receiving ingrdients', () => {
+       
+        wrapper.setProps({ings: {salad: 1}});
+        expect(wrapper.find(NavigationItem)).toHaveLength(2);
+    });
 });
