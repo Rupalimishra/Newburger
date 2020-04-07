@@ -8,8 +8,7 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe('Testing of <Spinner />  componenet', () => {
     test("render an spinner", () => {
-        const wrapper = shallow(<Spinner />);
-       expect(wrapper).toBeTruthy();
-       expect(wrapper.find("Loding").length).toEqual(0);
+    const wrapper = shallow(<Spinner />);
+    expect(wrapper.find("Loding").length).toEqual(0);
     })
 })

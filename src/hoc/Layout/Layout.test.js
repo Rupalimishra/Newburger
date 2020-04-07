@@ -6,6 +6,13 @@ import { Layout } from './Layout';
 
 configure({adapter: new Adapter()});
 
-    it('should render <Layout /> when receiving ingredients', () => {
-    
-    }); 
+describe('<Layout />', () => {
+    test("render state", () => {
+        const wrapper = shallow(<Layout />);
+        expect(wrapper.state().showSideDrawer).toEqual(false);
+    })
+    test("render sideDrawerClosedHandle", () => {
+        const wrapper = shallow(<Layout />);
+        expect(wrapper).setState(false).showSideDrawer.toEqual(false);
+    })
+})

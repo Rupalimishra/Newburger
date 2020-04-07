@@ -5,6 +5,7 @@ import Adapter from 'enzyme-adapter-react-16';
 
 import { BurgerBuilder } from './BurgerBuilder';
 import BuildControls from '../../components/Burger/BuildControls/BuildControls';
+import button from '../../components/UI/Button/Button';
 
 configure({adapter: new Adapter()});
 
@@ -15,13 +16,13 @@ describe('<BurgerBuilder />', () => {
         wrapper = shallow(<BurgerBuilder onInitIngredients={() => {}}/>);
     });
 
-    it('should render <BuildControls /> when receiving ingredients', () => {
+    test('should render <BuildControls /> when receiving ingredients', () => {
         wrapper.setProps({ings: {salad: 0}});
         expect(wrapper.find(BuildControls)).toHaveLength(1);
     });
-    // it('should render three <BuildControls /> when receiving ingrdients', () => {
-       
-    //     wrapper.setProps({ings: {salad: 1}});
-    //     expect(wrapper.find(NavigationItem)).toHaveLength(2);
-    // });
+    test('should render two <BuildControls /> element if authicated', () => {
+       wrapper = shallow(<BurgerBuilder purchaseHandler />);
+       wrapper.setProps({ purchasing: true });
+       expect(wrapper.find(button).toHaveLength(2));
+    })
 });

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586186413889" clover="3.2.0">
-  <project timestamp="1586186413889" name="All files">
-    <metrics statements="407" coveredstatements="51" conditionals="208" coveredconditionals="7" methods="172" coveredmethods="7" elements="787" coveredelements="65" complexity="0" loc="407" ncloc="407" packages="26" files="35" classes="35">
+<coverage generated="1586278356291" clover="3.2.0">
+  <project timestamp="1586278356291" name="All files">
+    <metrics statements="409" coveredstatements="52" conditionals="204" coveredconditionals="7" methods="170" coveredmethods="7" elements="783" coveredelements="66" complexity="0" loc="409" ncloc="409" packages="26" files="35" classes="35">
       <package name="src">
         <metrics statements="19" coveredstatements="2" conditionals="25" coveredconditionals="0" methods="16" coveredmethods="1"/>
         <file name="App.js" path="/home/rupalimishra/Documents/React/Newburger/src/App.js">
@@ -115,8 +115,8 @@
         <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
         <file name="NavigationItems.js" path="/home/rupalimishra/Documents/React/Newburger/src/components/Navigation/NavigationItems/NavigationItems.js">
           <metrics statements="2" coveredstatements="2" conditionals="4" coveredconditionals="4" methods="1" coveredmethods="1"/>
-          <line num="21" count="3" type="stmt"/>
-          <line num="22" count="5" type="stmt"/>
+          <line num="8" count="3" type="stmt"/>
+          <line num="9" count="5" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Navigation.NavigationItems.NavigationItem">
@@ -158,7 +158,7 @@
         <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <file name="Backdrop.js" path="/home/rupalimishra/Documents/React/Newburger/src/components/UI/Backdrop/Backdrop.js">
           <metrics statements="2" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="5" count="3" type="stmt"/>
+          <line num="5" count="4" type="stmt"/>
           <line num="6" count="0" type="cond" truecount="0" falsecount="2"/>
         </file>
       </package>
@@ -303,7 +303,7 @@
         <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
         <file name="Aux.js" path="/home/rupalimishra/Documents/React/Newburger/src/hoc/Aux/Aux.js">
           <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="1" count="3" type="stmt"/>
+          <line num="1" count="4" type="stmt"/>
         </file>
       </package>
       <package name="src.hoc.Layout">
@@ -317,18 +317,20 @@
         </file>
       </package>
       <package name="src.hoc.WithErrorHandler.js">
-        <metrics statements="9" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
+        <metrics statements="11" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="0"/>
         <file name="WithErrorHandler.js" path="/home/rupalimishra/Documents/React/Newburger/src/hoc/WithErrorHandler.js/WithErrorHandler.js">
-          <metrics statements="9" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="10" coveredmethods="0"/>
-          <line num="1" count="0" type="stmt"/>
-          <line num="3" count="0" type="stmt"/>
-          <line num="4" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="6" count="0" type="stmt"/>
+          <metrics statements="11" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="8" coveredmethods="0"/>
+          <line num="6" count="1" type="stmt"/>
           <line num="7" count="0" type="stmt"/>
+          <line num="13" count="0" type="stmt"/>
+          <line num="14" count="0" type="stmt"/>
+          <line num="15" count="0" type="stmt"/>
+          <line num="17" count="0" type="stmt"/>
+          <line num="18" count="0" type="stmt"/>
+          <line num="23" count="0" type="stmt"/>
+          <line num="24" count="0" type="stmt"/>
           <line num="28" count="0" type="stmt"/>
-          <line num="29" count="0" type="stmt"/>
           <line num="32" count="0" type="stmt"/>
-          <line num="44" count="0" type="stmt"/>
         </file>
       </package>
       <package name="src.hoc.asyncComponent">
