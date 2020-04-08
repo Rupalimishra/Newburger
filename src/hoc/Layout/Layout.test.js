@@ -6,13 +6,17 @@ import { Layout } from './Layout';
 
 configure({adapter: new Adapter()});
 
-describe('<Layout />', () => {
+  describe('<Layout />', () => {
+    let wrapper;
+    beforeEach(() => wrapper = shallow(<Layout />));
+     
+    test("should render a <div />", () => {
+        expect(wrapper.find('div').length).toEqual(1);
+    })
     test("render state", () => {
         const wrapper = shallow(<Layout />);
-        expect(wrapper.state().showSideDrawer).toEqual(false);
+        expect(wrapper.instance().state.showSideDrawer).toEqual(false);
     })
-    test("render sideDrawerClosedHandle", () => {
-        const wrapper = shallow(<Layout />);
-        expect(wrapper).setState(false).showSideDrawer.toEqual(false);
-    })
+    
 })
+

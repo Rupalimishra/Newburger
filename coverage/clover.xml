@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1586278356291" clover="3.2.0">
-  <project timestamp="1586278356291" name="All files">
-    <metrics statements="409" coveredstatements="52" conditionals="204" coveredconditionals="7" methods="170" coveredmethods="7" elements="783" coveredelements="66" complexity="0" loc="409" ncloc="409" packages="26" files="35" classes="35">
+<coverage generated="1586365537881" clover="3.2.0">
+  <project timestamp="1586365537881" name="All files">
+    <metrics statements="407" coveredstatements="55" conditionals="200" coveredconditionals="7" methods="168" coveredmethods="9" elements="775" coveredelements="71" complexity="0" loc="407" ncloc="407" packages="26" files="35" classes="35">
       <package name="src">
         <metrics statements="19" coveredstatements="2" conditionals="25" coveredconditionals="0" methods="16" coveredmethods="1"/>
         <file name="App.js" path="/home/rupalimishra/Documents/React/Newburger/src/App.js">
@@ -37,11 +37,11 @@
         </file>
       </package>
       <package name="src.components.Burger">
-        <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+        <metrics statements="8" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
         <file name="Burger.js" path="/home/rupalimishra/Documents/React/Newburger/src/components/Burger/Burger.js">
-          <metrics statements="8" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
-          <line num="6" count="2" type="stmt"/>
-          <line num="7" count="0" type="stmt"/>
+          <metrics statements="8" coveredstatements="2" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="1"/>
+          <line num="6" count="3" type="stmt"/>
+          <line num="7" count="1" type="stmt"/>
           <line num="9" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
           <line num="14" count="0" type="stmt"/>
@@ -63,11 +63,11 @@
         </file>
       </package>
       <package name="src.components.Burger.BuildControls.BuildControl">
-        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
         <file name="BuildControl.js" path="/home/rupalimishra/Documents/React/Newburger/src/components/Burger/BuildControls/BuildControl/BuildControl.js">
-          <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
-          <line num="5" count="2" type="stmt"/>
-          <line num="6" count="0" type="stmt"/>
+          <metrics statements="2" coveredstatements="2" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="1"/>
+          <line num="5" count="3" type="stmt"/>
+          <line num="6" count="1" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Burger.BurgerIngredient">
@@ -90,7 +90,7 @@
           <line num="33" count="0" type="stmt"/>
           <line num="35" count="0" type="stmt"/>
           <line num="38" count="0" type="stmt"/>
-          <line num="42" count="2" type="stmt"/>
+          <line num="42" count="4" type="stmt"/>
         </file>
       </package>
       <package name="src.components.Burger.OrderSummary">
@@ -334,17 +334,15 @@
         </file>
       </package>
       <package name="src.hoc.asyncComponent">
-        <metrics statements="8" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
+        <metrics statements="6" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
         <file name="asyncComponent.js" path="/home/rupalimishra/Documents/React/Newburger/src/hoc/asyncComponent/asyncComponent.js">
-          <metrics statements="8" coveredstatements="0" conditionals="6" coveredconditionals="0" methods="6" coveredmethods="0"/>
-          <line num="1" count="0" type="cond" truecount="0" falsecount="4"/>
-          <line num="3" count="0" type="stmt"/>
+          <metrics statements="6" coveredstatements="1" conditionals="2" coveredconditionals="0" methods="4" coveredmethods="0"/>
+          <line num="3" count="1" type="stmt"/>
           <line num="4" count="0" type="stmt"/>
           <line num="10" count="0" type="stmt"/>
           <line num="12" count="0" type="stmt"/>
           <line num="17" count="0" type="stmt"/>
           <line num="19" count="0" type="cond" truecount="0" falsecount="2"/>
-          <line num="22" count="0" type="stmt"/>
         </file>
       </package>
       <package name="src.shared">

@@ -9,6 +9,6 @@ configure({adapter: new Adapter()});
 describe("render the componenetwillMount component", () => {
     test("render componentWillMount",() => {
         const withErrorHandler = shallow(< withErrorHandler/>);
-        expect(wrapper).setState(null).componentWillMount.toEqual(null);
+        expect(withErrorHandler.componentWillMount(null)).toEqual(null);
     } )
 })
