@@ -6,9 +6,13 @@ import BuildControls from './BuildControls';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
-const wrapper = shallow(<BuildControls />);
+
 describe("render the add" , () => {
     test("should render disable button ",() => {
         expect( wrapper.added()).toEqual(true);
+    })
+    test("render order now button disable ", () => {
+        const wrapper = shallow(<BuildControls />);
+        expect(wrapper('button')).toHaveTextContent('ORDER NOW');
     })
 })
