@@ -1,15 +1,16 @@
+
 import React from 'react';
+import Enzyme, { shallow } from 'enzyme';
+import EnzymeAdapter from 'enzyme-adapter-react-16';
 
-import { configure, shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import { Logo } from './Logo';
+import Logo from './Logo';
 
-configure({adapter: new Adapter()});
+Enzyme.configure({ adapter: new EnzymeAdapter() });
 
-    it('should render <Logo />  with out any crashing', () => {
-        const wrapper = shallow(<App />);
-        const logoComponent = wrapper.find("[className='{classes.Logo} style={{height: props.height}}']");
-        expect(logoComponent.length).toBe(0);
-       
-    });
+describe('Testing of <Logo /> Image componenet', () => {
+    test("render an image", () => {
+        const wrapper = shallow(<Logo />);
+       expect(wrapper.find("img").length).toEqual(1);
+    })
+})
 

@@ -68,32 +68,28 @@
 43
 44
 45
-46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+46
+47</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
@@ -103,13 +99,19 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-yes">2x</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">4x</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -119,14 +121,15 @@ import PropTypes from 'prop-types';
 import classes from './BurgerIngredient.css';
 &nbsp;
 class BurgerIngredient extends Component {
-<span class="fstat-no" title="function not covered" >    re</span>nder () {
-        let ingredient = <span class="cstat-no" title="statement not covered" >null;</span>
-&nbsp;
-<span class="cstat-no" title="statement not covered" >        switch ( this.props.type ) {</span>
-            case ( 'bread-bottom' ):
+   
+    render () {
+        let ingredient = null;
+   
+        switch ( this.props.type ) {
+<span class="branch-0 cbranch-no" title="branch not covered" >            case ( 'bread-bottom' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.BreadBottom}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'bread-top' ):
+<span class="branch-1 cbranch-no" title="branch not covered" >            case ( 'bread-top' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = (</span>
                     &lt;div className={classes.BreadTop}&gt;
                         &lt;div className={classes.Seeds1}&gt;&lt;/div&gt;
@@ -134,23 +137,23 @@ class BurgerIngredient extends Component {
                     &lt;/div&gt;
                 );
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'meat' ):
+<span class="branch-2 cbranch-no" title="branch not covered" >            case ( 'meat' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Meat}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'cheese' ):
+<span class="branch-3 cbranch-no" title="branch not covered" >            case ( 'cheese' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Cheese}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'bacon' ):
+<span class="branch-4 cbranch-no" title="branch not covered" >            case ( 'bacon' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Bacon}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
-            case ( 'salad' ):
+<span class="branch-5 cbranch-no" title="branch not covered" >            case ( 'salad' ):</span>
 <span class="cstat-no" title="statement not covered" >                ingredient = &lt;div className={classes.Salad}&gt;&lt;/div&gt;;</span>
 <span class="cstat-no" title="statement not covered" >                break;</span>
             default:
-<span class="cstat-no" title="statement not covered" >                ingredient = null;</span>
+                ingredient = null;
         }
 &nbsp;
-<span class="cstat-no" title="statement not covered" >        return ingredient;</span>
+        return ingredient;
     }
 }
 &nbsp;
@@ -164,7 +167,7 @@ export default BurgerIngredient;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 03 2020 21:42:14 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 13 2020 22:00:14 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../../prettify.js"></script>

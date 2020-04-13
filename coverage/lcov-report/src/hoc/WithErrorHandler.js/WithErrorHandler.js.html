@@ -68,29 +68,24 @@
 43
 44
 45
-46</td><td class="line-coverage quiet"><span class="cline-any cline-no">&nbsp;</span>
+46</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-yes">1x</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -99,6 +94,11 @@
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -111,37 +111,37 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-no">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React,<span class="cstat-no" title="statement not covered" > { Component } from 'react';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ></span></span></span></span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">import React, { Component } from 'react';
 &nbsp;
-import Modal <span class="cstat-no" title="statement not covered" >from '../../components/UI/Modal/Modal';<span class="cstat-no" title="statement not covered" ></span></span>
-import Aux <span class="cstat-no" title="statement not covered" >from '../Aux/Aux';<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span>
+import Modal from '../../components/UI/Modal/Modal';
+import Aux from '../Aux/Aux';
 &nbsp;
-const withErrorHandler = <span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >( </span>WrappedComponent, axios ) =&gt; {</span>
-<span class="cstat-no" title="statement not covered" >    return class extends Component {<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ></span></span></span>
+const withErrorHandler = <span class="fstat-no" title="function not covered" >( </span>WrappedComponent, axios ) =&gt; {
+<span class="cstat-no" title="statement not covered" >    return class extends Component {</span>
         state = {
             error: null
         }
 &nbsp;
-        componentWillMount () {
-            this.reqInterceptor = axios.interceptors.request.use( req =&gt; {
-                this.setState( { error: null } );
-                return req;
+<span class="fstat-no" title="function not covered" >        co</span>mponentWillMount () {
+<span class="cstat-no" title="statement not covered" >            this.reqInterceptor = axios.interceptors.request.use( <span class="fstat-no" title="function not covered" >re</span>q =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                this.setState( { error: null } );</span>
+<span class="cstat-no" title="statement not covered" >                return req;</span>
             } );
-            this.resInterceptor = axios.interceptors.response.use( res =&gt; res, error =&gt; {
-                this.setState( { error: error } );
+<span class="cstat-no" title="statement not covered" >            this.resInterceptor = axios.interceptors.response.use( <span class="fstat-no" title="function not covered" >re</span>s =&gt; <span class="cstat-no" title="statement not covered" >res,</span> <span class="fstat-no" title="function not covered" >er</span>ror =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                this.setState( { error: error } );</span>
             } );
         }
 &nbsp;
-        componentWillUnmount () {
-            axios.interceptors.request.eject( this.reqInterceptor );
-            axios.interceptors.response.eject( this.resInterceptor );
+<span class="fstat-no" title="function not covered" >        co</span>mponentWillUnmount () {
+<span class="cstat-no" title="statement not covered" >            axios.interceptors.request.eject( this.reqInterceptor );</span>
+<span class="cstat-no" title="statement not covered" >            axios.interceptors.response.eject( this.resInterceptor );</span>
         }
 &nbsp;
-        errorConfirmedHandler = () =<span class="fstat-no" title="function not covered" >&gt; </span>{
-            this<span class="cstat-no" title="statement not covered" >.setState( { error: null } );</span>
-        }<span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ><span class="fstat-no" title="function not covered" ></span></span></span></span></span></span></span></span></span></span></span></span></span>
+        errorConfirmedHandler = <span class="fstat-no" title="function not covered" >()</span> =&gt; {
+<span class="cstat-no" title="statement not covered" >            this.setState( { error: null } );</span>
+        }
 &nbsp;
 <span class="fstat-no" title="function not covered" >        re</span>nder () {
 <span class="cstat-no" title="statement not covered" >            return (</span>
@@ -156,7 +156,7 @@ const withErrorHandler = <span class="cstat-no" title="statement not covered" ><
             );
         }
     }
-}<span class="cstat-no" title="statement not covered" ></span>
+}
 &nbsp;
 export default withErrorHandler;</pre></td></tr>
 </table></pre>
@@ -164,7 +164,7 @@ export default withErrorHandler;</pre></td></tr>
 </div><!-- /wrapper -->
 <div class='footer quiet pad2 space-top1 center small'>
   Code coverage
-  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Apr 03 2020 21:42:14 GMT+0530 (IST)
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Mon Apr 13 2020 22:00:14 GMT+0530 (IST)
 </div>
 </div>
 <script src="../../../prettify.js"></script>

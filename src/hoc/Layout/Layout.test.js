@@ -6,7 +6,17 @@ import { Layout } from './Layout';
 
 configure({adapter: new Adapter()});
 
-    it('should render <Layout /> when receiving ingredients', () => {
-    //    wrapper.setProps({Layout: {height: 0}});
-    //     expect(wrapper.find(Layout)).toHaveLength(1);
-    }); 
+  describe('<Layout />', () => {
+    let wrapper;
+    beforeEach(() => wrapper = shallow(<Layout />));
+     
+    test("should render a <div />", () => {
+        expect(wrapper.find('div').length).toEqual(1);
+    })
+    test("render state", () => {
+        const wrapper = shallow(<Layout />);
+        expect(wrapper.instance().state.showSideDrawer).toEqual(false);
+    })
+    
+})
+
