@@ -7,12 +7,54 @@ import BuildControls from './BuildControls';
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 
-describe("render the add" , () => {
-    test("should render disable button ",() => {
-        expect( wrapper.added()).toEqual(true);
+let orButton;
+
+describe('BuildControls', () => {
+  
+    it('should render salad button', () => {
+        
+        const props = {
+            disabled: () => true
+        };
+        
+       
+        const wrapper = shallow(<BuildControls  {...props}/>);
+        
+        orButton = wrapper;
+        orButton.setProps= true;
+         expect(orButton.setProps).toEqual(true);
+    });
+     it('should render the bacon button', () => {
+       
+        const props = {
+            disabled: () => true,
+  
+ };
+         
+         const wrapper = shallow(<BuildControls  {...props}/>);
+         orButton = wrapper;
+         orButton.setProps = true;
+        expect(orButton.setProps).toEqual(true);
+        
     })
-    test("render order now button disable ", () => {
-        const wrapper = shallow(<BuildControls />);
-        expect(wrapper('button')).toHaveTextContent('ORDER NOW');
+    it("should render the cheese button  ", () => {
+        const props = {
+
+            disabled: () => true,
+ };
+        const wrapper = shallow(<BuildControls {...props} />);
+        orButton = wrapper;
+        orButton.setProps = true;
+        expect(orButton.setProps).toEqual(true);
     })
-})
+    it("should render the meat button" , () => {
+        const props = {
+            disabled: () => true,
+        }
+       const wrapper = shallow(<BuildControls {...props} />);
+       orButton = wrapper;
+       orButton.setProps = true;
+        expect(orButton.setProps).toEqual(true);
+    })
+
+});

@@ -8,8 +8,12 @@ Enzyme.configure({ adapter: new EnzymeAdapter() });
 
 describe('Testing of <BurgerIngredient />  componenet', () => {
     let wrapper;
-    beforeEach(() => wrapper = shallow(<BurgerIngredient {...props } />))
+   
+    // beforeEach(() => wrapper = shallow(<BurgerIngredient {...props } />))
     test("render bread bottom switch case", () => {
-     expect(wrapper.instance())
+    const mock = [ { type: "bread-top"} ];
+
+    expect(shallow(<BurgerIngredient props = { mock.type } />)).toMatchsnapshot();
+    
     })
 })

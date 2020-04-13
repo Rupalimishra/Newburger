@@ -6,16 +6,13 @@ import OrderSummary from './OrderSummary';
 
 Enzyme.configure({ adapter: new EnzymeAdapter() });
 
+describe('OrderSummay', () => {
+    it("should render the OrderSummary", () => {
+        const ingredientSummary = Object.keys( this.props.ingredients )
+        const wrapper = shallow(<OrderSummary  {...props}/>);
+        expect(wrapper(ingredientSummary)).toBeGreaterThan(0);
 
-describe("render", () => {
-    test("render the CANCLE button", () => {
-        const wrapper = shallow (<OrderSummary />);
-        const text = wrapper.find('CANCLE').text();
-        expect(text).toEqual('CANCLE');
-    })
-    test('render the OrderSummary  CONTINUE button ', () => {
-        const text = wrapper.find('CONTINUE').text();
-        expect(text).toEqual('CONTINUE');
         
     })
 })
+
